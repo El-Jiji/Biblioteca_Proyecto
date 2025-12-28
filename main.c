@@ -1,12 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void mostrarCatalogo();
-void registrarUsuario();
-void registrarLibro();
-void realizarPrestamo();
-void devolverLibro();
-void mostrarDatosBiblioteca();
+// Incluimos los archivos .c directamente para que funcione todo junto sin .h
+// Esto permite compartir las structs y funciones definidas en ellos.
+#include "libros.c"
+#include "usuarios.c"
+#include "prestamos.c"
+#include "biblioteca.c"
 
 void pausar() {
     printf("\n|======= ENTER para volver al menu =======|");
@@ -29,11 +29,12 @@ int main() {
         printf("4. Prestamo\n");
         printf("5. Devolucion\n");
         printf("6. Datos biblioteca\n");
-        printf("7. Salir\n");
+        printf("7. Cambiar disponibilidad libro (Manual)\n");
+        printf("8. Salir\n");
         printf("Seleccione una opcion: ");
         scanf("%d", &opcion);
 
-        getchar();
+        getchar(); // Consumir newline despues de scanf
 
         switch (opcion) {
             case 1: mostrarCatalogo(); break;
@@ -42,13 +43,14 @@ int main() {
             case 4: realizarPrestamo(); break;
             case 5: devolverLibro(); break;
             case 6: mostrarDatosBiblioteca(); break;
-            case 7: printf("Saliendo...\n"); break;
+            case 7: cambiarDisponibilidad(); break;
+            case 8: printf("Saliendo...\n"); break;
             default: printf("Opcion invalida\n");
         }
-        if (opcion != 7) {
+        if (opcion != 8) {
             pausar();
         }
-    } while (opcion != 7);
+    } while (opcion != 8);
 
     system("pause");
     return 0;
