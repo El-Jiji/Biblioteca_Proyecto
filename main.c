@@ -19,8 +19,10 @@ int main() {
 
     do {
         #ifdef _WIN32
-            system("cls");
-        #endif
+        system("cls");
+    #else
+        system("clear");
+    #endif
 
         printf("\n|======= MENU BIBLIOTECA =======|\n");
         printf("1. Mostrar catalogo\n");
