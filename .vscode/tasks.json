@@ -1,0 +1,24 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compilar Biblioteca",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "main.c",
+                "libros.c",
+                "usuarios.c",
+                "prestamos.c",
+                "biblioteca.c",
+                "-o",
+                "main.exe"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$gcc"]
+        }
+    ]
+}
