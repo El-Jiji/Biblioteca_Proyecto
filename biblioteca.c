@@ -11,7 +11,7 @@ void mostrarDatosBiblioteca() {
         system("clear");
     #endif
 
-    archivo = fopen("datos/biblioteca.txt", "r"); // abrir el archivo en modo lectura
+    archivo = fopen("datos/biblioteca.txt", "r");
     if (archivo == NULL) {
         printf("Error: No se pudo abrir el archivo de datos de la biblioteca.\n");
         return;
