@@ -31,8 +31,7 @@ int main() {
         printf("4. Prestamo\n");
         printf("5. Devolucion\n");
         printf("6. Datos biblioteca\n");
-        printf("7. Cambiar disponibilidad libro (Manual)\n");
-        printf("8. Salir\n");
+        printf("7. Salir\n");
         printf("Seleccione una opcion: ");
         scanf("%d", &opcion);
 
@@ -45,14 +44,13 @@ int main() {
             case 4: realizarPrestamo(); break;
             case 5: devolverLibro(); break;
             case 6: mostrarDatosBiblioteca(); break;
-            case 7: cambiarDisponibilidad(); break;
-            case 8: printf("Saliendo...\n"); break;
+            case 7: printf("Saliendo...\n"); break;
             default: printf("Opcion invalida\n");
         }
-        if (opcion != 8) {
+        if (opcion != 7) {
             pausar();
         }
-    } while (opcion != 8);
+    } while (opcion != 7);
 
     system("pause");
     return 0;
