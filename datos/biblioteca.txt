@@ -1,23 +1,23 @@
 Nombre de la biblioteca:
 Biblioteca ESCOM
 
-Descripción:
-La biblioteca cuenta con más de 2,900 títulos y con más de 17,800 volúmenes
-para su consulta en sala y préstamos a domicilio.
+Descripcion:
+La biblioteca cuenta con mas de 2,900 titulos y con mas de 17,800 volumenes
+para su consulta en sala y prestamos a domicilio.
 
-Número de la biblioteca:
+Numero de la biblioteca:
 No. 1
 
-Dirección:
-ESCOM IPN, Av. Juan de Dios Bátiz s/n esq. Av. Miguel Othón de Mendizabal.
+Direccion:
+ESCOM IPN, Av. Juan de Dios Batiz s/n esq. Av. Miguel Othon de Mendizabal.
 Colonia Lindavista.
 
-Teléfono:
+Telefono:
 55 5729 6000
 
 Horario:
 Lunes a Viernes de 8:30 a.m a 20:30 p.m
 
 Cantidad de afluencia estimada:
-Cubículos para grupos de 2-4 personas y Salas para grupos de 5-10 personas,
+Cubiculos para grupos de 2-4 personas y Salas para grupos de 5-10 personas,
 con tiempo limitado.
